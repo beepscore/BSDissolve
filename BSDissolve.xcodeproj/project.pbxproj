@@ -45,7 +45,7 @@
 		DE9F51F218C06CDE003C09C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE9F51F418C06CDE003C09C3 /* BSDissolve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSDissolve-Prefix.pch"; sourceTree = "<group>"; };
 		DE9F51F518C06CDE003C09C3 /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
-		DE9F51F618C06CDE003C09C3 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		DE9F51F618C06CDE003C09C3 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BSAppDelegate.m; path = BSDissolve/BSAppDelegate.m; sourceTree = "<group>"; };
 		DE9F51F918C06CDE003C09C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DE9F51FC18C06CDE003C09C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DE9F51FE18C06CDE003C09C3 /* BSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSMasterViewController.h; sourceTree = "<group>"; };
@@ -91,6 +91,7 @@
 				DE9F521118C06CDF003C09C3 /* BSDissolveTests */,
 				DE9F51E518C06CDE003C09C3 /* Frameworks */,
 				DE9F51E418C06CDE003C09C3 /* Products */,
+				DE9F51F618C06CDE003C09C3 /* BSAppDelegate.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				DE9F51F518C06CDE003C09C3 /* BSAppDelegate.h */,
-				DE9F51F618C06CDE003C09C3 /* BSAppDelegate.m */,
 				DE9F51F818C06CDE003C09C3 /* Main_iPhone.storyboard */,
 				DE9F51FB18C06CDE003C09C3 /* Main_iPad.storyboard */,
 				DE9F51FE18C06CDE003C09C3 /* BSMasterViewController.h */,
@@ -205,7 +205,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Beepscore LLC";
 				TargetAttributes = {
 					DE9F520918C06CDF003C09C3 = {
@@ -324,7 +324,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -364,7 +363,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -423,7 +421,6 @@
 		DE9F521F18C06CDF003C09C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BSDissolve.app/BSDissolve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -446,7 +443,6 @@
 		DE9F522018C06CDF003C09C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BSDissolve.app/BSDissolve";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -481,6 +477,7 @@
 				DE9F521D18C06CDF003C09C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE9F521E18C06CDF003C09C3 /* Build configuration list for PBXNativeTarget "BSDissolveTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +486,7 @@
 				DE9F522018C06CDF003C09C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
