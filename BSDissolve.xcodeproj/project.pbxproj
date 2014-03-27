@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE6C923718E3C6DC00862241 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DE6C923818E3C6EE00862241 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DE9F51E318C06CDE003C09C3 /* BSDissolve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSDissolve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9F51E618C06CDE003C09C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE9F51E818C06CDE003C09C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,8 @@
 		DE9F51DA18C06CDE003C09C3 = {
 			isa = PBXGroup;
 			children = (
+				DE6C923818E3C6EE00862241 /* README.md */,
+				DE6C923718E3C6DC00862241 /* LICENSE.txt */,
 				DE9F51EC18C06CDE003C09C3 /* BSDissolve */,
 				DE9F521118C06CDF003C09C3 /* BSDissolveTests */,
 				DE9F51E518C06CDE003C09C3 /* Frameworks */,
